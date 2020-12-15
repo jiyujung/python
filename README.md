@@ -1,2 +1,2 @@
 # python
-python 수업 소스
+python 연습 소스
