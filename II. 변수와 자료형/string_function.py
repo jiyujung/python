@@ -15,3 +15,8 @@ x = "01::23::ab::&&"
 y = x.split("::")                   # x 문자열을 '::'로 나누어 리스트 만들기
 print(y)                            # ['01', '23', 'ab', '&&']
 print(", ".join(y))                 # y 리스트를 ', '로 이어서 문자열 만들기 / 01, 23, ab, &&
+
+# format : 문자열 형식을 미리 정하고, 인자를 주어 문자열을 완성한다.
+s = "name: {}, number: {}, soccer: {}"
+print(s.format("Ronaldo", 7, True))
+print("name: {name}, number: {num}".format(name = "Jordan", num = 23))
