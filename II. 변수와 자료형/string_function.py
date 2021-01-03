@@ -20,3 +20,11 @@ print(", ".join(y))                 # y 리스트를 ', '로 이어서 문자열
 s = "name: {}, number: {}, soccer: {}"
 print(s.format("Ronaldo", 7, True))
 print("name: {name}, number: {num}".format(name = "Jordan", num = 23))
+
+# 정수를 표현하는 여러 가지 방법
+print("{:d}".format(515))           # 정수를 넣는다 / 515
+print("{:5d}".format(515))          # 최소 5칸을 차지하고 정수를 넣는다 /   515
+print("{:+5d}".format(515))         # 양수면 +를 표시한다 /  +515
+print("{:=+5d}".format(515))        # +를 맨 앞에 표시한다 / + 515
+print("{:05d}".format(515))         # 빈칸은 0으로 채운다 / 00515
+print("{:+05d}".format(515))        # 양수면 0 앞에 +를 표시한다 / +0515
