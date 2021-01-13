@@ -34,3 +34,11 @@ nums.pop()          # [0, 1, 2, 10, 11, 60, 50]
 nums.pop(5)         # [0, 1, 2, 10, 11, 50]
 # clear() : 모든 요소를 제거
 nums.clear()        # []
+
+# 리스트에서 요소 검색
+# 값 in 리스트 : 리스트에 값이 있는지 확인
+nums = list(range(3))       # [0, 1, 2]
+nums += [100, 10]       # [0, 1, 2, 100, 10]
+print(nums[3])      # 100
+print(3 in nums)   # False
+print(10 in nums)   # True
