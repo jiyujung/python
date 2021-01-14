@@ -42,3 +42,9 @@ nums += [100, 10]       # [0, 1, 2, 100, 10]
 print(nums[3])      # 100
 print(3 in nums)   # False
 print(10 in nums)   # True
+
+# 기타 리스트 관련 함수
+# len(리스트) : 리스트의 각 요소의 개수를 셈
+print(len(nums))    # 5
+nums.sort()     # [0, 1, 2, 10, 100]
+nums.reverse()      # [100, 10, 2, 1, 0]
