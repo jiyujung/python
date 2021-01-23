@@ -10,3 +10,8 @@ print(urls)
 # 딕셔너리에 요소 수정
 urls["x"] = 1920        # 키 'x'가 딕셔너리에 있으면, 수정
 print(urls)
+
+# 딕셔너리에 요소 제거
+del urls["x"]                # {"google" : "google.com", "18" : "unesco.org"}
+print(urls.pop("18"))        # {"google" : "google.com"} / unesco.org
+print(urls.clear())          # {}
