@@ -15,3 +15,13 @@ print(urls)
 del urls["x"]                # {"google" : "google.com", "18" : "unesco.org"}
 print(urls.pop("18"))        # {"google" : "google.com"} / unesco.org
 print(urls.clear())          # {}
+
+# 딕셔너리에서 요소 검색
+urls = {"google" : "google.com", "18" : "unesco.org"}
+print(urls["google"])                   # 키 'google'의 값을 가져옴 / google.com
+print(urls.get("google"))               # 키 'google'의 값을 가져옴 / google.com
+# 키 in 딕셔너리 : 딕셔너리에 키가 있는지 확인
+print("google" in urls)                 # 키 'google'이 있는지 확인 / True
+print("google.com" in urls)             # 키 'google.com'이 있는지 확인 / False
+# 키 in 딕셔너리.values() : 딕셔너리에 값이 있는지 확인
+print("google.com" in urls.values())    # True
