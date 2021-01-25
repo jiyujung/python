@@ -25,3 +25,12 @@ print("google" in urls)                 # 키 'google'이 있는지 확인 / Tru
 print("google.com" in urls)             # 키 'google.com'이 있는지 확인 / False
 # 키 in 딕셔너리.values() : 딕셔너리에 값이 있는지 확인
 print("google.com" in urls.values())    # True
+
+# 기타 딕셔너리 관련 함수
+print(len(urls))        # 2
+# 딕셔너리.keys() : 딕셔너리의 키들을 dict_keys 객체로 리턴
+print(urls.keys())      # dict_keys(['google', '18'])
+# 딕셔너리.values() : 딕셔너리의 값들을 dict_values 객체로 리턴
+print(urls.values())    # dict_values(['google.com', 'unesco.org'])
+# 딕셔너리.items() : 딕셔너리의 키와 값의 쌍을 묶어 dict_items 객체로 리턴
+print(urls.items())     # dict_items([('google', 'google.com'), ('18', 'unesco.org')])
