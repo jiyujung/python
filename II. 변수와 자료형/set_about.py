@@ -12,3 +12,11 @@ print(set((2560, 1440)))    # {2560, 1440}
 print(set({"google":"google.com", 18:"unesco.org"}))    # {'google', 18}
 # set(range()) : range() 함수의 각 요소가 하나씩 리스트의 요소로 들어감
 print(set(range(3)))    # {0, 1, 2}
+
+# 셋에 추가
+# add() : 요소 하나를 추가할 때 사용
+game.add("Fifa")
+print(game)     # {2048, 1942, 'Tetris', 'Overwatch', 'Fifa', 'LOL'}
+# update() : 여러 요소를 추가할 때 사용
+game.update(("NBA", "MLB"))
+print(game)     # {2048, 'NBA', 1942, 'MLB', 'Tetris', 'Overwatch', 'Fifa', 'LOL'}
