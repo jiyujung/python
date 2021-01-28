@@ -20,3 +20,7 @@ print(game)     # {2048, 1942, 'Tetris', 'Overwatch', 'Fifa', 'LOL'}
 # update() : 여러 요소를 추가할 때 사용
 game.update(("NBA", "MLB"))
 print(game)     # {2048, 'NBA', 1942, 'MLB', 'Tetris', 'Overwatch', 'Fifa', 'LOL'}
+
+# 셋에서 제거
+game.remove("LOL")
+print(game)     # {2048, 'Tetris', 'NBA', 1942, 'MLB', 'Overwatch', 'Fifa'}
