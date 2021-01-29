@@ -24,3 +24,19 @@ print(game)     # {2048, 'NBA', 1942, 'MLB', 'Tetris', 'Overwatch', 'Fifa', 'LOL
 # 셋에서 제거
 game.remove("LOL")
 print(game)     # {2048, 'Tetris', 'NBA', 1942, 'MLB', 'Overwatch', 'Fifa'}
+
+# 셋 연산
+# 교집합
+s3 = {3, 6, 9, 12}
+s4 = {4, 8, 12, 16}
+s3 & s4
+print(s3.intersection(s4))         # {12}
+# 합집합
+s3 | s4
+print(s3.union(s4))         # {3, 4, 6, 8, 9, 10, 12, 16}
+# 차집합
+s3 - s4
+print(s3.difference(s4))    # {9, 3, 6}
+# 대칭 차집합
+s3 ^ s4
+print(s3.symmetric_difference(s4))      # {3, 4, 6, 8, 9, 16}
