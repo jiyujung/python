@@ -38,3 +38,15 @@ for row in table:
     for col in row:
         print(str(col)+" ")
     print()
+
+# break, continue 문
+# break 문 : 반복을 즉시 멈추고, 반복문 밖으로 제어가 빠져나감
+for i in range(1, 9+1):
+    if i == 7:                          # i가 7이면
+        break                           # 반복을 멈춤
+    print("2 x {} = {}".format(i, 2*i)) # 구구단 2단을 출력
+# continue 문 : 다음 순서의 반복 시작점으로 제어가 이동
+for i in range(1, 9+1):
+    if i % 2 == 0:                      # i가 짝수이면
+        continue                        # 다음 i부터 다시 반복
+    print("2 x {} = {}".format(i, 2*i)) # 구구단 2단을 출력
