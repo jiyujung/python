@@ -25,3 +25,20 @@ print(pi, "의 소수점 1자리 반올림은", round(pi, 0))
 print(pi, "의 소수점 2자리 반올림은", round(pi, 1))
 print(pi, "의 소수점 3자리 반올림은", round(pi, 2))
 print(pi, "의 소수점 4자리 반올림은", round(pi, 3))
+
+# 문자열 관련 내장 함수와 문자열 형 변환 함수
+user_name = input("이름은? ")
+user_age = input("나이는? ")
+print(user_name + "님! 나이는 " + str(user_age) + "세군요!")
+say = "{0}님! 나이는 {1}세군요! {1}세라니 놀라워요!"
+print(say.format(user_name, user_age))
+
+pi = "3.14159"
+print("문자열 출력:", pi)
+print("실수 변환 출력:", float(pi))
+print(float(pi) + 100)
+year = "2020"
+print("올해 연도:", year)
+print("100년 뒤는", int(year) + 100, "년입니다.")
+print("숫자를 문자열로 변환하려면 str()을 이용합니다.")
+print("올해는 " + str(year) + "년입니다.")
