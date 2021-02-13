@@ -42,3 +42,14 @@ print("올해 연도:", year)
 print("100년 뒤는", int(year) + 100, "년입니다.")
 print("숫자를 문자열로 변환하려면 str()을 이용합니다.")
 print("올해는 " + str(year) + "년입니다.")
+
+# 리스트 관련 내장 함수
+list = ['d', 'c', 'a', 'b']
+list.reverse()
+print("리스트 항목 순서 뒤집기", list)
+list.sort()
+print("리스트 항목 정렬하기", list)
+list.sort(reverse=True)
+print("리스트 항목 역정렬하기", list)
+for index, value in enumerate(list):
+    print("인덱스", index, "위치의 값은 ", value)
