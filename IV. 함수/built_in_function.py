@@ -53,3 +53,9 @@ list.sort(reverse=True)
 print("리스트 항목 역정렬하기", list)
 for index, value in enumerate(list):
     print("인덱스", index, "위치의 값은 ", value)
+
+# 내장 함수와 똑같은 이름의 변수 사용
+str = "나는 문자열"
+print(str)
+n = 3
+#print(str(n))       # 오류 발생
