@@ -30,3 +30,18 @@ print("multi_num(17, 1, 200) : ", multi2)
 print()
 multi3 = multi_num(3, 1, 100)
 print("multi_num(3, 1, 100) : ", multi3)
+
+# 튜플을 사용해 여러 값을 여러 개 리턴하기
+def min_max(*args):
+    min = args[0]
+    max = args[0]
+    for arg in args:
+        if min > arg:
+            min = arg
+        if max < arg:
+            max = arg
+    return min, max
+print(min_max(52, -3, 23, 89, -21))
+min_value, max_value = min_max(52, -3, 23, 89, -21)
+print("최저값:", min_value)
+print("최고값:", max_value)
